@@ -24,6 +24,16 @@ This project presents an interactive Power BI dashboard designed to analyze and 
 
 ---
 
+## 🔄 Data Workflow
+
+1. Raw supply chain dataset collected
+2. Data cleaned and transformed using Python (Pandas)
+3. Feature engineering performed for risk and delay metrics
+4. Data loaded into Power BI for visualization
+5. Interactive dashboard created for business decision-making
+
+---
+
 ## Live Preview
 
 Download the `.pbix` file and open it in Power BI Desktop to explore the interactive dashboard.
@@ -43,12 +53,19 @@ Download the `.pbix` file and open it in Power BI Desktop to explore the interac
 
 ## ⚙️ Data Processing & Analysis (Python)
 
-- Cleaned and processed supply chain dataset using Pandas
-- Created derived metrics:
-  - Delay Percentage
-  - Risk Classification (High / Medium / Low)
-  - Supplier Performance Score
-- Performed exploratory analysis to identify patterns in delays and demand
+- Performed data cleaning using Pandas:
+  - Handled missing values and inconsistent records
+  - Standardized categorical fields (Supplier, Category)
+
+- Engineered key features:
+  - Delay Percentage = (Delayed Orders / Total Orders)
+  - Risk Classification based on delivery time thresholds
+  - Supplier Performance Score combining delay and demand metrics
+
+- Conducted exploratory data analysis (EDA):
+  - Identified distribution of demand across categories
+  - Analyzed supplier-wise delay patterns
+  - Detected correlation between delivery time and product risk
 
 ---
 
@@ -76,6 +93,7 @@ Download the `.pbix` file and open it in Power BI Desktop to explore the interac
 - High-risk products are strongly correlated with longer delivery times and supply instability
 - Supplier performance variability suggests potential for optimization through better vendor selection
 - Improving supplier efficiency and inventory planning can reduce delivery risk and increase overall profitability
+- Identified strong correlation between delivery delays and high-risk product classification, indicating systemic supply chain inefficiencies
 
 ---
 
